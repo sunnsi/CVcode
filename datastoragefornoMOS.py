@@ -1,4 +1,4 @@
-'''data generation without the consideration of MSIS assumption'''
+'''data generation without the consideration of MOS constraint'''
 import spherical_noCmax as pn
 import spherical_Cmax as pc
 
@@ -10,7 +10,7 @@ workbook=xlwt.Workbook(encoding='utf-8')
 
 def plotCVtotal1():
     '''
-    Spehrical electrode with MSIS assumption and without MSIS assumption,
+    Spehrical electrode with MOS constraint and without MOS constraint.
     Different diffusion coefficient Ds.
     '''
     x = np.linspace(-4,6,11)
@@ -60,7 +60,7 @@ plotCVtotal1()
 
 def plotCVtotal2():
     '''
-    Spehrical electrode with MSIS assumption and without MSIS assumption,
+    Spehrical electrode with MOS constraint and without MOS constraint,
     Different radius R.
     '''
     x = np.linspace(-4,6,11)
@@ -108,4 +108,4 @@ def plotCVtotal2():
     plt.show()
     
 plotCVtotal2()
-workbook.save('datafornoMSIS.xls')
+workbook.save('datafornoMOS.xls')

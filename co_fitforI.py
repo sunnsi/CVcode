@@ -14,7 +14,7 @@ def funfit(r,nu,Ds,Cmax):
     r : the radius of spherical electrode
     nu : the scan rate
     Ds : the diffusion efficient of the electrode side
-    Cmax : MSIS
+    Cmax : MOS
     
     Returns
     -------
@@ -43,7 +43,7 @@ Ipc=np.array([])
 x=np.array([])
 
 '''data fetch'''
-book = xlrd.open_workbook('dataforMSIS.xls')
+book = xlrd.open_workbook('dataforMOS.xls')
 book1 = book.sheet_by_name('Sheet1')
 speed = np.linspace(-4,6,11)
 F = 96485

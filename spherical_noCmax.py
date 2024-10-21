@@ -1,5 +1,5 @@
 '''
-the finite difference method without the consideration of MSIS assumption
+the finite difference method without the consideration of MOS constraint
 '''
 import numpy as np 
 
